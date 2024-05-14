@@ -1,0 +1,78 @@
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ rm -r /home/sunbeam/Desktop/Practice/one/two/four/five
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ rm -r /home/sunbeam/Desktop/Practice/one/two/four
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ cat > data.txt
+Linux is open source
+
+in linux everything is File
+
+Files have permissions.
+
+Files have inode no.
+
+Files have size.
+
+there are several types of file.sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ wc data.txt
+ 10  25 148 data.txt
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep data.txt
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "files" data.txt
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep files *
+grep: two: Is a directory
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "files" *
+grep: two: Is a directory
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "LINUX" *
+grep: two: Is a directory
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "file" *
+data.txt:there are several types of file.
+grep: two: Is a directory
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "files" data.txt
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep -v "files" data.txt
+Linux is open source
+
+in linux everything is File
+
+Files have permissions.
+
+Files have inode no.
+
+Files have size.
+
+there are several types of file.
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ tail -n 3 data.txt
+Files have size.
+
+there are several types of file.sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ tail^C
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ head -n 2 data.txt
+Linux is open source
+
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ head -n 5 data.txt | tail -n 3
+in linux everything is File
+
+Files have permissions.
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Dessunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Dessunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ g                             ^C
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "\.$" data.txt
+Files have permissions.
+Files have inode no.
+Files have size.
+there are several types of file.
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "f" data.txt
+there are several types of file.
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep"^f" data.txt
+grep^f: command not found
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "have" data.txt
+Files have permissions.
+Files have inode no.
+Files have size.
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "files" data.txt
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "file" data.txt
+there are several types of file.
+sunbeam@sunbeam-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep -v "files" data.txt
+Linux is open source
+
+in linux everything is File
+
+Files have permissions.
+
+Files have inode no.
+
+Files have size.
+

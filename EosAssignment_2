@@ -1,0 +1,78 @@
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ rm -r /home/sandesh/Desktop/Practice/one/two/four/five
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ rm -r /home/sandesh/Desktop/Practice/one/two/four
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ cat > data.txt
+Linux is open source
+
+in linux everything is File
+
+Files have permissions.
+
+Files have inode no.
+
+Files have size.
+
+there are several types of file.sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ wc data.txt
+ 10  25 148 data.txt
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep data.txt
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "files" data.txt
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep files *
+grep: two: Is a directory
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "files" *
+grep: two: Is a directory
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "LINUX" *
+grep: two: Is a directory
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "file" *
+data.txt:there are several types of file.
+grep: two: Is a directory
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "files" data.txt
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep -v "files" data.txt
+Linux is open source
+
+in linux everything is File
+
+Files have permissions.
+
+Files have inode no.
+
+Files have size.
+
+there are several types of file.
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ tail -n 3 data.txt
+Files have size.
+
+there are several types of file.sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ tail^C
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ head -n 2 data.txt
+Linux is open source
+
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ head -n 5 data.txt | tail -n 3
+in linux everything is File
+
+Files have permissions.
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Dessandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Dessandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ g                             ^C
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "\.$" data.txt
+Files have permissions.
+Files have inode no.
+Files have size.
+there are several types of file.
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "f" data.txt
+there are several types of file.
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep"^f" data.txt
+grep^f: command not found
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "have" data.txt
+Files have permissions.
+Files have inode no.
+Files have size.
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "files" data.txt
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep "file" data.txt
+there are several types of file.
+sandesh@sandesh-Lenovo-ideapad-310-15IKB-Laptop-14-ce3xxx:~/Desktop/Practice/one$ grep -v "files" data.txt
+Linux is open source
+
+in linux everything is File
+
+Files have permissions.
+
+Files have inode no.
+
+Files have size.
+
